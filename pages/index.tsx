@@ -21,6 +21,17 @@ export default function Home() {
 
         <div className='w-full'>
           <WelcomeComponent/>
+          <div className='m-8'>
+            <h2 className='text-xl font-medium'>
+              Upcoming Events
+            </h2>
+          </div>
+
+          <div className='m-8'>
+            <h2 className='text-xl font-medium'>
+              Past Events
+            </h2>
+          </div>
         </div>
       </main>
     </>

@@ -28,7 +28,6 @@
     padding: 1rem 0;
     list-style: none;
     font-size: 1rem;
-    font-weight: 500;
     cursor: pointer;
 
     display: flex;
@@ -36,8 +35,14 @@
     gap: .5rem;
 }
 
+.navItems > li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .navItems > li > span {
-    margin-inline: 1rem;
+    padding: .5rem;
 }
 
 .social_icons_container{

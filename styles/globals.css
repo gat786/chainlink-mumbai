@@ -8,6 +8,16 @@
   background: #F3F3F4;
 }
 
+.selected > span {
+  background-color: theme('colors.blue.600');
+  color: white;
+  border-radius: 12px;
+}
+
+.selected {
+  font-weight: 600;
+}
+
 body{ 
   background: #F3F3F4;
   margin: 0px;
