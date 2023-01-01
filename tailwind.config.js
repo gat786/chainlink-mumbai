@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -8,8 +10,13 @@ module.exports = {
     extend: {
       colors: {
         custom_blue: '#375BD2',
+      },
+      fontFamily: {
+        'sans': ['Plus Jakarta Sans', ...defaultTheme.fontFamily.sans],
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-logical')
+  ],
 }

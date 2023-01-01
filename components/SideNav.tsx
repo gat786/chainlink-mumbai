@@ -7,7 +7,7 @@ import styles from "../styles/components/SideNav.module.css";
 
 export default function SideNav() {
   return (
-    <nav className={`${styles.root}`}>
+    <nav className={`${styles.root} shadow-lg shadow-gray-400`}>
         <div className={`${styles.logoHolder}`}>
             <div className='flex justify-center items-center'>
                 <img 
