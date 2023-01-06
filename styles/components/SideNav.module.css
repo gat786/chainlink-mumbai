@@ -1,6 +1,6 @@
 .root {
     position: fixed;
-    /* left: 90%; */
+    left: -330px;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -10,6 +10,10 @@
     color: #000;
 
     z-index: 2;
+}
+
+.open {
+    left: 0px;
 }
 
 .logoHolder{
@@ -74,4 +78,14 @@
     gap: 1rem;
     margin-block: 2rem;
     margin-inline: 2rem;
+}
+
+.openRoot {
+    transition-property: all;
+    transition-duration: 300ms;
+    left: 0px;
+}
+
+.closedRoot {
+    left: -100vw;
 }

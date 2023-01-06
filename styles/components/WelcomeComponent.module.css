@@ -7,9 +7,9 @@
 
 .backgroundImage {
     position: absolute;
-    top: 0%;
+    top: 0px;
     right: 0px;
-    width: 60%;
+    width: min(60%, 600px);
     height: 100%;
     background-image: url(/assets/mumbai-buildings.png);
     background-repeat: no-repeat;

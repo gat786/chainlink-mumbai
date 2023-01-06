@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import SideNav from '../components/SideNav'
+import TopNav from '../components/TopNav'
 import WelcomeComponent from '../components/WelcomeComponent'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,6 +21,7 @@ export default function Home() {
         <SideNav/>
 
         <div className='w-full'>
+          <TopNav/>
           <WelcomeComponent/>
           <div className='m-8'>
             <h2 className='text-xl font-medium'>
