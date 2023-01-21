@@ -1,14 +1,22 @@
+import React from 'react'
+import { useState } from 'react'
+
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import SideNav from '../components/SideNav'
-import TopNav from '../components/TopNav'
 import WelcomeComponent from '../components/WelcomeComponent'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const toggleNav = () => {
+    console.log('changing nav toggle');
+    setIsOpen(!isOpen);
+  }
+
   return (
     <>
       <Head>
@@ -17,12 +25,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='flex flex-row'>
-        <SideNav/>
-
+      <main className='flex flex-col lg:flex-row'>
+        <SideNav isOpen={isOpen} toggleNav={toggleNav} />
+        <div className={' h-12'}>
+          <button onClick={() => {
+            console.log('clicked');
+            
+            toggleNav();
+          }}>
+            Something
+            <span className="material-symbols-outlined">menu</span>
+          </button>
+        </div>
         <div className='w-full'>
-          <TopNav/>
-          <WelcomeComponent/>
+          <WelcomeComponent />
           <div className='m-8'>
             <h2 className='text-xl font-medium'>
               Upcoming Events
