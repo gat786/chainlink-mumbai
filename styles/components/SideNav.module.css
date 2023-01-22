@@ -20,6 +20,15 @@
     left: -100%;
 }
 
+.openBg {
+    width: 100%;
+    z-index: 2;
+}
+
+.closeBg {
+    width: 0%;
+}
+
 .logoHolder{
     padding-block: 2rem;
 }

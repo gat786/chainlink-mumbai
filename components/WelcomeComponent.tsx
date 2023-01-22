@@ -4,11 +4,9 @@ import styles from "../styles/components/WelcomeComponent.module.css";
 
 export default function WelcomeComponent() {
   return (
-    <div className={`${styles.root} m-6 rounded-2xl shadow-lg shadow-gray-4`}>
-        <div className='w-full h-full z-10 absolute'>
-            <div></div>
-            <div className={`${styles.backgroundImage}`}></div>
-        </div>
+    <div className={`${styles.root} relative m-6 rounded-2xl shadow-lg shadow-gray-4`}>
+        <div className={`${styles.backgroundImage}`}></div>
+        
         <div className='flex flex-col justify-center'>
             <div className='flex flex-col text-white m-8'>
                 <span className='text-2xl'>

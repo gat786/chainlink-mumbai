@@ -27,7 +27,7 @@ export default function Home() {
       </Head>
       <main className='flex flex-col lg:flex-row'>
         <SideNav isOpen={isOpen} toggleNav={toggleNav} />
-        <div className={' h-12'}>
+        <div className={'h-12 lg:hidden'}>
           <button onClick={() => {
             console.log('clicked');
             
